@@ -10,7 +10,9 @@ export default function App() {
 			root={(props) => (
 				<main>
 					<Navbar />
-					<Suspense>{props.children}</Suspense>
+					<Suspense>
+						<div class="prose prose-invert">{props.children}</div>
+					</Suspense>
 				</main>
 			)}
 		>

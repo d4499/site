@@ -1,5 +1,6 @@
 import { defineConfig } from "@solidjs/start/config";
 import rehypeShiki from "@shikijs/rehype";
+import remarkFrontmatter from "remark-frontmatter";
 /* @ts-ignore */
 import pkg from "@vinxi/plugin-mdx";
 
@@ -12,7 +13,7 @@ export default defineConfig({
 				jsx: true,
 				jsxImportSource: "solid-js",
 				providerImportSource: "solid-mdx",
-				remarkPlugins: [],
+				remarkPlugins: [remarkFrontmatter],
 				rehypePlugins: [
 					[
 						rehypeShiki,
