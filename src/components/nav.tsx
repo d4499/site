@@ -16,7 +16,9 @@ export function Navbar() {
 		<div class="my-8 flex justify-between items-center">
 			<div class="flex gap-4 items-center">
 				<div class="h-8 w-1 bg-indigo-500 rounded" />
-				<a href="/">Dalton Bennyhoff</a>
+				<a href="/" class="text-3xl font-semibold">
+					Dalton Bennyhoff
+				</a>
 			</div>
 			<div class="flex gap-4 ">
 				<For each={navItems}>
