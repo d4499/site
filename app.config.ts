@@ -18,7 +18,7 @@ export default defineConfig({
 					[
 						rehypeShiki,
 						{
-							theme: "rose-pine",
+							theme: "rose-pine-moon",
 						},
 					],
 				],
