@@ -3,6 +3,7 @@ import rehypeShiki from "@shikijs/rehype";
 import remarkFrontmatter from "remark-frontmatter";
 /* @ts-ignore */
 import pkg from "@vinxi/plugin-mdx";
+import { blogPostsPlugin } from "./blogPlugin";
 
 const { default: mdx } = pkg;
 export default defineConfig({
@@ -23,6 +24,7 @@ export default defineConfig({
 					],
 				],
 			}),
+			blogPostsPlugin(),
 		],
 	},
 });

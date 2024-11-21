@@ -1,12 +1,20 @@
 ---
 title: First post
+date: 2024-11-20
 ---
 
-# My first post
+import { CodeBlock } from "../../components/code-block.tsx";
 
-```ocaml
-let main _env =
-  Fiber.both
-    (fun () -> for x = 1 to 3 do traceln "x = %d" x; Fiber.yield () done)
-    (fun () -> for y = 1 to 3 do traceln "y = %d" y; Fiber.yield () done);;
+# This is my first post
+
+Test
+
+- hello
+- howdy
+- hey
+
+<CodeBlock filename="index.js">
+```js 
+console.log("Hello blog")
 ```
+</CodeBlock>
