@@ -1,13 +1,20 @@
+import { CodeBlock } from "../components/code-block.tsx";
+
 My name is **Dalton**
 
+<CodeBlock filename="main.go">
 ```go
 package main
 
 func main() {
-    fmt.Println("Hello world")
+fmt.Println("Hello world")
 }
 ```
 
+</CodeBlock>
+
+<CodeBlock filename="main.ml">
 ```ocaml
 let () = print_endline "Hello world"
-```
+````
+</CodeBlock>

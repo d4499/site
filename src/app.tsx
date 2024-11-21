@@ -3,6 +3,7 @@ import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import "./app.css";
 import { Navbar } from "./components/nav";
+import Prose from "./components/prose";
 
 export default function App() {
 	return (
@@ -11,7 +12,7 @@ export default function App() {
 				<main>
 					<Navbar />
 					<Suspense>
-						<div class="prose prose-invert">{props.children}</div>
+						<Prose>{props.children}</Prose>
 					</Suspense>
 				</main>
 			)}
